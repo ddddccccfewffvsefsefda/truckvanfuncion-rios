@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content=" whidth=device-width,initial-scale=1.0">
+  <title>Cadastro</title>
+  <style>
+    
+        body{
+             font-family: Arial, Helvetica, sans-serif;
+             background-color:rgb(27, 56, 56)
+        }
+        .box{
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: black; 
+            border-radius: 15px;
+            padding:15px;         
+        }
+        fieldset{
+            border: 3px solid dodgerblue;
+        }
+        legend{
+            border: 1px solid dodgerblue;
+            padding: 10px;
+            text-align: center;
+            background-color: dodgerblue;
+            border-radius: 5px;
+            
+        }
+        .inputbox{
+            position: relative;
+        }
+        .inputUser{
+            background: none;
+            border: none;
+            border-bottom: 1px solid black;
+            outline: none;
+            color: rgb(0, 0, 0);
+            font-size:15px ;
+        }
+        .labeLInput{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transform: .5s;
+        }
+        .inputUser:focus ~ .labelInput{
+            top: -20px;
+            font-size: 12px;
+            color:solid  dodgerblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><B>CADASTRO</B></legend>
+                <br>
+                <div class="inputbox">
+                   <input type="text" name="name" id="name" class="inputuser" required>
+                   <label for="Nome">Nome Completo</label>              
+                </div>
+                <br><br>
+                <div class="inputbox">
+                  <input type="email" name="email" id="email" class="inputuser" required>
+                  <label for="Nome">Email</label>
+                </div>
+                <br><br>
+                <div class="inputbox">
+                  <input type="tel" name="Telefone" id="Telefone" class="inputuser" required>
+                  <label for="Telefone" >Telefone</label>
+               </div>
+               <br><br>
+               <p>Sexo</p>
+               <input type="Radio" name="Gênero" value="Feminino" required>
+               <label for="Feminino">Feminino</label>
+               <input type="Radio" name="Gênero" value="masculino" required>
+               <label for="Masculino">Masculino</label>
+               <input type="Radio" name="Gênero" value="outro" required>
+               <label for="outro">Outro</label>
+               <div class="inputbox">
+                <br><br>
+                <label for=" data_nascimento"><b>Data de Nascimento </b></label>
+                <input type="date" name="data_nascimento" id="data_nascimento" class="inputuser" required>
+            </div>
+            <br><br>
+            <div class="inputbox">
+                <input type="text" name="cidade" id="cidade" class="inputuser" required>
+                <label for="email">Cidade</label>
+            </div>
+            <br><br>
+            <div class="inputbox">
+                <input type="text" name="estado" id="estado" class="inputuser" required>
+                <label for="estado">Estado</label>
+            </div>
+            <br><br>
+            <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </form>
+    </div>    
+</body>
+
+<a class="nav_link textobranco" href=""
+</html>
